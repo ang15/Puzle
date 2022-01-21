@@ -34,7 +34,6 @@ public class GameManager : MonoBehaviour
     public void OnStart(Puzzle puzzle)
     {
         puzzles.CanClick = false;
-        puzzles.moves -= 1;
         puzzles.CanClick = false;
         int second = puzzles.NullPuzzle.numberMaterial;
         int first = puzzle.numberMaterial;
@@ -52,6 +51,7 @@ public class GameManager : MonoBehaviour
         puzzle.y = NullPuzzleY;
         puzzles.CanClick = true;
     }
+
         IEnumerator DownBoxs(Puzzle puzzle)
     {
             puzzles.moves -= 1;
